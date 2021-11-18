@@ -1,0 +1,40 @@
+package selectionControlStructures;
+import java.util.Scanner;
+public class Exercise3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		double weight,height,bmi;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter weight: ");
+		weight = scan.nextDouble();
+		
+		System.out.println("Enter height: ");
+		height = scan.nextDouble();
+		
+		bmi = (100*100*weight)/(height*height);
+		System.out.printf("Your BMI is: %.2f" , bmi);
+		
+		if (bmi <= 18.5) 
+		{
+			System.out.println("\nYou are underweight");
+		}
+		else if ((bmi >=18.5) && (bmi <= 24.9))
+	    {
+	    	System.out.println("\nYour weight is normal");
+	    }
+	    else if ((bmi >= 25.0) && (bmi <= 30.0))
+		{
+			System.out.println("\nYou are overweight");
+		}
+	    
+	    else 
+	    {
+	    	System.out.println("\nYou are obese");
+	    }
+	}
+
+}
