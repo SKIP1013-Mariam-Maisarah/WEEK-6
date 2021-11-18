@@ -1,0 +1,72 @@
+package selectionControlStructures;
+import java.util.Scanner;
+public class Exercise4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int mark1, mark2;
+		String subject1, subject2;
+		double average;
+		
+		Scanner scan = new Scanner (System.in);
+		
+		System.out.println("Enter first subject: ");
+		subject1 = scan.next();
+		System.out.println("Enter mark for first subject: ");
+		mark1 = scan.nextInt();
+		
+		System.out.println("Enter second subject: ");
+		subject2 = scan.next();
+		System.out.println("Enter mark for second subject: ");
+		mark2 = scan.nextInt();
+		
+		if (mark1 >= mark2)
+		{
+			System.out.println("Mark for first subject is higher");
+		}
+		else 
+			{
+				System.out.println("Mark for second subject is higher");
+			}
+		
+		if (mark1 >= 50)
+		{
+			System.out.println("You pass for first subject");
+		}
+		else
+		{
+			System.out.println("You fail for first subject");
+		}
+	    if (mark2 >= 50)
+		{
+			System.out.println("You pass for second subject");
+		}
+		else
+		{
+			System.out.println("You fail for second subject");
+		}
+		
+		average = (mark1 + mark2)/2;
+		System.out.println("The average mark is: " + average);
+		
+		if (average >= 80)
+		{ 
+			System.out.println("Gred A");
+		}
+		else if ((average >=60) && (average <= 79))
+		{
+			System.out.println("Gred B");
+		}
+		else if ((average >=50) && (average <=59))
+		{
+			System.out.println("Gred C");
+		}
+		else
+		{
+			System.out.println("Fail");
+		}
+
+	}
+
+}
